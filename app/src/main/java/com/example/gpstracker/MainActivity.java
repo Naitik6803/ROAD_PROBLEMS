@@ -276,6 +276,11 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 if (closest <= 0.5) {
+                    if(count!=1 && mySpeed>40){
+                        Toast.makeText(getApplicationContext(),"You are advised to reduce your speed",Toast.LENGTH_SHORT).show();
+                        MediaPlayer mp = MediaPlayer.create(MainActivity.this, R.raw.note);
+                        mp.start();
+                    }
                     if (count == 1) {
                         MediaPlayer mp = MediaPlayer.create(MainActivity.this, R.raw.accident);
                         mp.start();
