@@ -271,6 +271,7 @@ public class MainActivity extends AppCompatActivity {
             if (extras != null) {
                 double closest = intent.getDoubleExtra("closest", 0);
                 double mySpeed = intent.getDoubleExtra("speed", 0);
+                Log.d("speed",closest+" is theval");
                 speed.setText("Your speed is "+(int)mySpeed);
                 if(closest<1){
                     closest*=1000;
@@ -280,13 +281,13 @@ public class MainActivity extends AppCompatActivity {
                 }
 
 
-                if (closest > 0.5) {
+                if (closest > 1.5) {
                     count = 0;
                 }
 
-                if (closest <= 0.5) {
-                    if(count!=1 && mySpeed>35){
-                        Toast.makeText(getApplicationContext(),"You are advised to reduce your speed",Toast.LENGTH_SHORT).show();
+                if (closest <= 1.5) {
+                    if(count%5==0 && mySpeed>35){
+                        Toast.makeText(getApplicationContext(),"You are advised to reduce your speed, you are in accident prone zone",Toast.LENGTH_SHORT).show();
                         MediaPlayer mp = MediaPlayer.create(MainActivity.this, R.raw.reduce);
                         mp.start();
                     }
