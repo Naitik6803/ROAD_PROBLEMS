@@ -18,7 +18,9 @@ area of red zone.
 He/she will be notified by ring 
 Our app will also run when phone is off.
 ```
-
+<p align="center">
+<img src="IMG-20220108-WA0083.jpg"/>
+</p>
 ### Features of this app :
 
 ```
