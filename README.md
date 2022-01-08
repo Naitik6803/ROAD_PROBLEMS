@@ -9,7 +9,7 @@
 2.] Accident Detection
 ```
 
-### GPS tracker for danger zone :
+### GPS tracker for accident prone zone :
 
 ```
 Our mobile app will help drivers to make them
@@ -22,7 +22,7 @@ destroyed or closed using foreground services.
 ```
 
 <p align="center">
-<img width="400" height="500" src="IMG-20220108-WA0083.jpg"/>
+<img width="600" height="500" src="IMG-20220108-WA0083.jpg"/>
 </p>
 ### Features of this app :
 
@@ -36,7 +36,9 @@ destroyed or closed using foreground services.
 4.] There is driving mode where the phone will be locked if the driver has entered accident prone zone
 
 5.] The driving mode can be enabled or disabled as per the wish of the driver.
+```
 
+```
 
 ### UI of the app
 
