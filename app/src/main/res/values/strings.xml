@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">GPSTracker</string>
+    <string name="app_description">YOu should allow my application to lock the screen</string>
+</resources>
