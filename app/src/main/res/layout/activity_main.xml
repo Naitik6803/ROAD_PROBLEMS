@@ -7,6 +7,7 @@
     android:background="#121212"
     tools:context=".MainActivity">
 
+
     <TextView
         android:id="@+id/lon"
         android:layout_width="wrap_content"
@@ -17,8 +18,7 @@
         android:background="#000"
         android:textColor="#FFFFFF"
         android:padding="10dp"
-        android:text="The longitude is: "
-        />
+        android:text="The longitude is: "/>
     <TextView
         android:id="@+id/lat"
         android:layout_width="wrap_content"
@@ -27,8 +27,19 @@
         android:background="#000"
         android:textColor="#FFFFFF"
         android:padding="10dp"
-        android:text="The Lattitude is: "
+        android:text="The Lattitude is: "/>
+    <TextView
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="#000"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:text="Your current location is :\n"
         />
+
+
 
     <TextView
         android:id="@+id/distance"
@@ -38,8 +49,7 @@
         android:textColor="#FFFFFF"
         android:padding="10dp"
         android:text="Closest accident prone area is at a distance: "
-        android:layout_margin="20dp"
-        />
+        android:layout_margin="20dp"/>
     <TextView
         android:id="@+id/speed"
         android:layout_width="wrap_content"
@@ -55,12 +65,10 @@
         android:id="@+id/b_enable"
         android:layout_width="wrap_content"
         android:layout_gravity="center"
-        android:layout_margin="40dp"
+        android:layout_margin="30dp"
         android:layout_height="wrap_content"
         android:textColor="#FFFFFF"
         android:text="Enable Driving Mode"
-        />
-text="Lock"
         />
 
 </LinearLayout>
