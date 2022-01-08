@@ -24,7 +24,7 @@ destroyed or closed using foreground services.
 <p align="center">
 <img width="600" height="500" src="IMG-20220108-WA0083.jpg"/>
 </p>
-### Features of this app :
+Features of this app :
 
 ```
 1.] Whenever the driver enter an accident prone zone an alert will be sent in the form of a voice
@@ -38,9 +38,9 @@ destroyed or closed using foreground services.
 5.] The driving mode can be enabled or disabled as per the wish of the driver.
 ```
 
-```
 
-### UI of the app
+UI of the app:-
+```
 
 1.] Latitude and longitude are provided.
 
