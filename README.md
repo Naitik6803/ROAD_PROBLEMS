@@ -14,7 +14,30 @@
 Our mobile app will help drivers in such a way 
 that whenever he/she will enters into the radial
 area of red zone.
-<br>
+
 He/she will be notified by ring 
 Our app will also run when phone is off.
+```
+
+### Features of this app :
+
+```
+1.] Latitude and longitude will be fetched by the gpc.
+
+2.] App will give distance of the nearest danger zone from driers location.
+    
+3.] If driver is in accident prone zone and driver mode is on then phone will turn off automatically.
+    
+4.] App will also show the speed of driver.
+
+5.] If driver is in red zone then the alarm will on.
+
+```
+### Tech used :
+```
+LocationManager library for getting latitude and longitude
+
+JAVA
+
+BAS
 ```
