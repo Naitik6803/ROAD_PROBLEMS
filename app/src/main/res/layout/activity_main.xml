@@ -6,33 +6,44 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <TextView
         android:id="@+id/lon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="40dp"
+        android:layout_margin="30dp"
         android:text="The longitude is:"
         />
     <TextView
         android:id="@+id/lat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="40dp"
+        android:layout_margin="30dp"
         android:text="The Lattitude is:"
         />
+
+    <TextView
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="Your current location is :\n"
+        />
+
+
 
     <TextView
         android:id="@+id/distance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Closest accident prone area is at a distance: "
-        android:layout_margin="40dp"
+        android:layout_margin="30dp"
         />
     <TextView
         android:id="@+id/speed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="40dp"
+        android:layout_margin="30dp"
         android:text="Your speed is:"
         />
 
@@ -40,11 +51,9 @@
         android:id="@+id/b_enable"
         android:layout_width="wrap_content"
         android:layout_gravity="center"
-        android:layout_margin="40dp"
+        android:layout_margin="30dp"
         android:layout_height="wrap_content"
         android:text="Enable Driving Mode"
-        />
-text="Lock"
         />
 
 </LinearLayout>

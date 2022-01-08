@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
     LocationManager locationManager;
     Button b_enable,b_lock;
     Context mContext;
-    TextView lat,lon,dist,speed;
+    TextView lat,lon,dist,speed,add;
 
     FusedLocationProviderClient fusedLocationProviderClient;
     int count=0;
@@ -102,6 +102,8 @@ public class MainActivity extends AppCompatActivity {
         lon=(TextView)findViewById(R.id.lon);
         dist=(TextView)findViewById(R.id.distance);
         speed=(TextView)findViewById(R.id.speed);
+        add=(TextView)findViewById(R.id.add);
+
 
 
 
@@ -118,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
                     intent.putExtra(DevicePolicyManager.EXTRA_ADD_EXPLANATION,"You should enable the app");
                     startActivity(intent);
                     b_enable.setText("Disable Driving Mode");
-                 }
+                }
             }
         });
 
@@ -219,8 +221,10 @@ public class MainActivity extends AppCompatActivity {
 //                        Toast.makeText(getApplicationContext(),"The Longitude is " + addresses.get(0).getLongitude(),Toast.LENGTH_SHORT).show();
                         double myLat=addresses.get(0).getLatitude();
                         double myLon=addresses.get(0).getLongitude();
+                        String s =addresses.get(0).getAddressLine(0) + "\n";
                         lat.setText("The lattitude is :"+myLat);
                         lon.setText("The longitude is :"+myLon);
+                        add.setText("Your current location is :\n"+s);
 //                        calculateDanger(myLat,myLon);
 
                     } catch (IOException e) {
@@ -268,7 +272,12 @@ public class MainActivity extends AppCompatActivity {
                 double closest = intent.getDoubleExtra("closest", 0);
                 double mySpeed = intent.getDoubleExtra("speed", 0);
                 speed.setText("Your speed is "+(int)mySpeed);
-                dist.setText("Closest accident prone area is at a distance: " + df.format(closest)+ " km");
+                if(closest<1){
+                    closest*=1000;
+                    dist.setText("Closest accident prone area is at a distance: " + df.format(closest)+ " metres");
+                }else{
+                    dist.setText("Closest accident prone area is at a distance: " + df.format(closest)+ " km");
+                }
 
 
                 if (closest > 0.5) {
@@ -276,29 +285,29 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 if (closest <= 0.5) {
-                    if(count!=1 && mySpeed>40){
+                    if(count!=1 && mySpeed>35){
                         Toast.makeText(getApplicationContext(),"You are advised to reduce your speed",Toast.LENGTH_SHORT).show();
-                        MediaPlayer mp = MediaPlayer.create(MainActivity.this, R.raw.note);
+                        MediaPlayer mp = MediaPlayer.create(MainActivity.this, R.raw.reduce);
                         mp.start();
                     }
                     if (count == 1) {
                         MediaPlayer mp = MediaPlayer.create(MainActivity.this, R.raw.accident);
                         mp.start();
                     }
-                        boolean active = devicePolicyManager.isAdminActive(componentName);
-                        if (active && count==0) {
-                            Toast.makeText(getApplicationContext(), "The screen will be locked in a few seconds, because you are in a accident prone zone. To avoid disable driving mode", Toast.LENGTH_LONG).show();
-                            final Handler handler = new Handler();
-                            handler.postDelayed(new Runnable() {
-                                @Override
-                                public void run() {
-                                    boolean active = devicePolicyManager.isAdminActive(componentName);
-                                    if (active) {
-                                        devicePolicyManager.lockNow();
-                                    }
+                    boolean active = devicePolicyManager.isAdminActive(componentName);
+                    if (active && count==0) {
+                        Toast.makeText(getApplicationContext(), "The screen will be locked in a few seconds, because you are in a accident prone zone. To avoid disable driving mode", Toast.LENGTH_LONG).show();
+                        final Handler handler = new Handler();
+                        handler.postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                boolean active = devicePolicyManager.isAdminActive(componentName);
+                                if (active) {
+                                    devicePolicyManager.lockNow();
                                 }
-                            }, 10000);
-                        }
+                            }
+                        }, 10000);
+                    }
                     Log.d("close","count value is "+count);
                     count++;
                     if (count == 30) {
