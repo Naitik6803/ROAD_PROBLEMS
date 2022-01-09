@@ -73,12 +73,17 @@ This model will detect whether an accident is hapenning or not in a video.
 So in a video each frame will be checked and if the frame has an accident, then 
 it can be differentiated.
 ```
-
+### accident video
 <p align="center">
-  <img src="Screenshot (41).png"/>
-  <img src="Screenshot (43).png"/>
-  <img src="Screenshot (42).png"/>
-  <img src="Screenshot (44).png"/>
+  <img src="accidentgif.gif" width="600"/>
+</p>
+
+### Photos
+<p align="center">
+  <img src="Screenshot (41).png" width="300"/>
+  <img src="Screenshot (43).png" width="300"/>
+  <img src="Screenshot (42).png" width="300"/>
+  <img src="Screenshot (44).png" width="300"/>
   </p>
 
 ### Problems we faced:
