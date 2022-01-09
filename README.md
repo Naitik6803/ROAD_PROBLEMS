@@ -74,6 +74,13 @@ So in a video each frame will be checked and if the frame has an accident, then
 it can be differentiated.
 ```
 
+<p align="center">
+  <img src="Screenshot (41).png"/>
+  <img src="Screenshot (43).png"/>
+  <img src="Screenshot (42).png"/>
+  <img src="Screenshot (44).png"/>
+  </p>
+
 ### Problems we faced:
 ```
 1.] We tried using video object detection but were unable to succed using that method, due to 
