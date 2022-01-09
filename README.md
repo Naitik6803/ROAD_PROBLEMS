@@ -22,7 +22,7 @@ destroyed or closed using foreground services.
 ```
 
 <p align="center">
-<img width="600" height="600" src="IMG-20220108-WA0083.jpg"/>
+<img width="300" height="500" src="IMG-20220108-WA0083.jpg"/>
 </p>
 Features of this app :
 
