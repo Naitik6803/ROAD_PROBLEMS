@@ -54,7 +54,7 @@ UI of the app:-
 
 ```
 
-### Tech used :
+### Tech Stack used :
 
 ```
 LocationManager library for getting latitude and longitude
@@ -62,5 +62,61 @@ LocationManager library for getting latitude and longitude
 GeoCoder for getting address, speed, etc
 
 JAVA
+
+```
+
+
+### Accident detection:
+
+```
+This model will detect whether an accident is hapenning or not in a video.
+So in a video each frame will be checked and if the frame has an accident, then 
+it can be differentiated.
+
+### Problems we faced:
+```
+1.] We tried using video object detection but were unable to succed using that method, due to 
+less time as it was taking a lot of time to train at the least number of epoch also. 
+
+2.] Finding a good dataset was difficult as the dataset we were searching was where 
+we can get screenshots of cctv cameras.
+```
+
+# Feature of this mdoel
+```
+1.] It will help identify whenever there is an accident hapenning.
+
+2.] Whenever accident is happening we can differentiate it.
+```
+
+### Problems this model will solve:
+
+```
+1.] The job of police will become much easier.
+
+2.] Many lives will be saved. Deaths and injury will become low in road accidents.
+
+```
+### Tech stack used:
+```
+1.] OpenCv
+
+2.] Tensorflow
+
+3.] python
+```
+
+### Future Scope:
+```
+
+1.] The accuracy of this model will improve if we a lot of data set,
+we have used limited data since it was taking a lot of time to train. 
+
+2.] We can still make this model to video obeject detection with more data and training time, 
+and therefore will be much more accurate and better.
+
+```
+
+
 
 ```
