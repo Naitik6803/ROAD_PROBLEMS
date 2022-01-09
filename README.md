@@ -72,6 +72,7 @@ JAVA
 This model will detect whether an accident is hapenning or not in a video.
 So in a video each frame will be checked and if the frame has an accident, then 
 it can be differentiated.
+```
 
 ### Problems we faced:
 ```
@@ -107,8 +108,8 @@ we can get screenshots of cctv cameras.
 ```
 
 ### Future Scope:
-```
 
+```
 1.] The accuracy of this model will improve if we a lot of data set,
 we have used limited data since it was taking a lot of time to train. 
 
@@ -117,6 +118,3 @@ and therefore will be much more accurate and better.
 
 ```
 
-
-
-```
