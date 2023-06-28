@@ -112,6 +112,7 @@ we can get screenshots of cctv cameras.
 ```
 ### Tech stack used:
 ```
+https://drive.google.com/drive/folders/115cQgjfVpO9SIEQdMddIY3yLNllehbq4?usp=sharing
 1.] OpenCv
 
 2.] Tensorflow
