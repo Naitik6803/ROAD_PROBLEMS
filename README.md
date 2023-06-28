@@ -110,14 +110,21 @@ we can get screenshots of cctv cameras.
 2.] Many lives will be saved. Deaths and injury will become low in road accidents.
 
 ```
-### Tech stack used:
+### Link of darknet model and dataset 
 ```
 https://drive.google.com/drive/folders/115cQgjfVpO9SIEQdMddIY3yLNllehbq4?usp=sharing
+```
+### Tech stack used:
+```
+
 1.] OpenCv
 
 2.] Tensorflow
 
 3.] python
+
+4.] Darknet
+
 ```
 
 ### Future Scope:
